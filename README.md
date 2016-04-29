@@ -43,7 +43,7 @@ python indel_detector.py
 ```
 Output: a tab-delimited file summarizing whether each query sequence likely contains an indel ("Gap" or "Overlap") is successfully aligned ("Alignment Succeeded"), or had uninformative search results.
 
-### 3. Retrieving paired-end reads unmerged by PANDAseq for metageomic assembly (note the that built-in feature in PANDAseq to output these unmerged reads may not function reliably)
+### 3. Retrieving paired-end reads unmerged by PANDAseq for metageomic assembly (note the that the built-in feature in PANDAseq to output these unmerged reads may not function reliably)
 After determining optimum settings for PANDAseq, run the following script to retrieve unmerged paired end reads for downstream use:
 ```
 unmerged_pandaseq_readPuller.sh [pandaseq_merged_read_filepath.fasta.gz] [fwd_read_filepath.fastq.gz] [rev_read_filepath.fastq.gz] [/output/data/directory] > logfile.txt
